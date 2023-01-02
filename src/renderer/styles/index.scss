@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1d2c;
+    color: #FFF8F0;
+    font-family: sans-serif;
+    height: 100vh;
+
+    #root {
+        height: 100%;
+        display: grid;
+        place-items: center;
+
+        .about {
+            position: relative;
+            // display: grid;
+            place-items: center;
+            inset: 0;
+
+            ul>li>ul>li {
+                margin-left: 20px;
+            }
+
+            h2 {
+                margin-bottom: 30px;
+            }
+
+            a {
+                color: #92140C;
+            }
+        }
+    }
+}
